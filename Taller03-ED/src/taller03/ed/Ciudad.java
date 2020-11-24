@@ -14,12 +14,16 @@ public class Ciudad {
         this.nombre = nombre;
         this.poblacion = poblacion;
         this.area = area;
+        
     }
 
     public PriorityQueue<PuntoTuristico> getListaPuntos() {
         return listaPuntosTuristicos;
     }
 
-    
+    @Override
+    public String toString() {
+        return "Ciudad{" + "nombre=" + nombre + '}';
+    }
     
 }

@@ -20,7 +20,17 @@ public class Taller03ED {
         for(String ciu : nombreCiudades){
             pais.getListaCiudades().add(Lectura.leerArchivos(ciu));
         }
-            
+          
+        
     }
     
+    public static void menu(Pais pais){
+        int contador = 1;
+        for(Ciudad ciu : pais.getListaCiudades()){
+            System.out.println(contador+") "+ciu);
+            contador++;
+        }
+        System.out.println(contador+") Salir");
+        
+    }
 }
