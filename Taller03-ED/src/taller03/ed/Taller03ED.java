@@ -26,6 +26,7 @@ public class Taller03ED {
     
     public static void menu(Pais pais){
         int contador = 1;
+        
         for(Ciudad ciu : pais.getListaCiudades()){
             System.out.println(contador+") "+ciu);
             contador++;
