@@ -20,7 +20,7 @@ public class Taller03ED {
         for(String ciu : nombreCiudades){
             pais.getListaCiudades().add(Lectura.leerArchivos(ciu));
         }
-          
+        System.out.println("holamundo");
         
     }
     
