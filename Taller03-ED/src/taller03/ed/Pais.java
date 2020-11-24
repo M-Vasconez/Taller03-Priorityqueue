@@ -23,6 +23,7 @@ public class Pais {
         this.poblacion = poblacion;
         this.area = area;
         this.idioma = idioma;
+        listaCiudades = new PriorityQueue<Ciudad>();
     }
 
     public PriorityQueue<Ciudad> getListaCiudades() {

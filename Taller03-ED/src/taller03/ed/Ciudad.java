@@ -15,6 +15,7 @@ public class Ciudad implements Comparator{
         this.nombre = nombre;
         this.poblacion = poblacion;
         this.area = area;
+        listaPuntosTuristicos = new PriorityQueue<PuntoTuristico>();
         
     }
 
