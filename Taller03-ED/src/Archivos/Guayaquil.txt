@@ -1,0 +1,42 @@
+Lugar,Longitud,Latitud,puntaje
+Archivo Historico del Guayas,-79.8923546,-2.1647503,4.8
+Barco Pirata Morgan,-79.8803101,-2.196707,4.9
+Biblioteca Municipal,-79.88257,-2.19566,4.6
+Casa de la Cultura,-79.8886339,-2.1893128,3.5
+Casa de los Titeres,-79.8990802,-2.1862966,2
+Casa familia Z S,-79.9064696,-2.0930505,1.1
+Centro Comercial y Artesanal MACHALA,-79.8927631,-2.1967177,1.8
+Centro de Escalada,-79.9216362,-2.1064767,3.3
+cerro pseudo ito,-79.9263951,-2.1674878,2.6
+Cerro Santa Ana,-79.8832223,-2.1811692,1.7
+Faro del Cerro Santa Ana,-79.8754872,-2.1809472,2
+Guayaquil en la Historia,-79.8768299,-2.186256,0.3
+Guayarte,-79.9034003,-2.1801447,4.4
+Jardin Botanico de Guayaquil,-79.9094348,-2.0799942,4.6
+La Perla,-79.8759277,-2.1865035,1.6
+La perla. rueda moscovita,-79.8758538,-2.1859339,4.8
+Las Pe�as,-79.8753755,-2.1816861,4
+Malecon del Salado,-79.895844,-2.1859152,4.6
+Malecon del Salado,-79.8983317,-2.1874592,2
+Malecon Simon Bolivar,-79.8784126,-2.1888298,3.7
+Mirador de Ecuavisa,-79.883771,-2.1820864,4.3
+Mirador de urdesa,-79.925298,-2.1705692,2.5
+Monumento a Jos� Joaqu�n de Olmedo,-79.8825535,-2.2004321,3
+Muelle caraguay,-79.8879891,-2.2281808,2.4
+Museo de la M�sica Popular Julio Jaramillo,-79.8741222,-2.1808411,3.3
+Museo de los Equipos del Astillero,-79.8741024,-2.1814949,1.9
+Museo del Benem�rito Cuerpo de Bomberos de Guayaquil,-79.8768722,-2.1834087,2.8
+"Museo del Bombero ""F�lix Luque Plata""",-79.89738,-2.2040953,2.8
+Museo del Cacao,-79.8789168,-2.188042,4.3
+Museo en Miniatura,-79.8767658,-2.1863809,3.8
+"Museo Memorial BAE ""Abd�n Calder�n""",-79.887147,-2.2151838,2.5
+Museo Nahim Isa�as,-79.8813612,-2.1942153,0.9
+Museo Naval Almirante Illingworth,-79.8864949,-2.2148518,2.5
+Parque del Bloque 3,-79.9251429,-2.0939331,4
+Parque Viernes Santo,-79.9089965,-2.2437557,3.6
+Plaza Colon,-79.87655,-2.18325,1.8
+Plaza de la Administracion,-79.8812447,-2.1947773,1.8
+Plaza de la Merced,-79.8784126,-2.1888298,1.9
+Plaza Presidente Vicente Rocafuerte,-2.19213,-79.88158,5
+Plaza San Francisco,-79.8784126,-2.1888298,4.1
+Puerto Santa Ana,-79.8743266,-2.180503,4.5
