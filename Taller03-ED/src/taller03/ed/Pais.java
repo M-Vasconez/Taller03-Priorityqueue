@@ -22,6 +22,14 @@ public class Pais {
         this.area = area;
         this.idioma = idioma;
     }
+
+    public PriorityQueue<Ciudad> getListaCiudades() {
+        return listaCiudades;
+    }
+
+    public void setListaCiudades(PriorityQueue<Ciudad> listaCiudades) {
+        this.listaCiudades = listaCiudades;
+    }
     
     
 }
