@@ -5,12 +5,6 @@
  */
 package taller03.ed;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-
-
 /**
  *
  * @author Matias Vasconez
@@ -22,7 +16,11 @@ public class Taller03ED {
      */
     public static void main(String[] args) {
         String nombreCiudades[]= {"Guayaquil","Quito"};
-        
+        Pais pais = new Pais("Ecuador",1,1,"Espanol");
+        for(String ciu : nombreCiudades){
+            pais.getListaCiudades().add(Lectura.leerArchivos(ciu));
+        }
+            
     }
     
 }
