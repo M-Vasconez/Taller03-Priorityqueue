@@ -21,10 +21,14 @@ public class Lectura {
         try{
             BufferedReader lector = new BufferedReader(new FileReader("src/Archivos/"+archivo+".txt"));
             String linea;
+            boolean lectura = false;
             while((linea=lector.readLine()) != null){
+                    if(lectura){
                     String[] lineaSep = linea.split(",");
                     PuntoTuristico pt = new PuntoTuristico(lineaSep[0],Double.parseDouble(lineaSep[1]),Double.parseDouble(lineaSep[2]),Double.parseDouble(lineaSep[3]));
                     ciudad.getListaPuntos().add(pt);
+                    }
+                    lectura=true;
             }
             
             lector.close();
