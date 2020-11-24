@@ -25,12 +25,16 @@ public class Taller03ED {
     }
     
     public static void leerArchivos(String archivo){
+        Ciudad ciudad = new Ciudad();
         try{
             BufferedReader lector = new BufferedReader(new FileReader("src/Archivos/"+archivo+".txt"));
             String linea;
             while((linea=lector.readLine()) != null){
                     String[] lineaSep = linea.split(",");
+                    PuntoTuristico pt = new PuntoTuristico(lineaSep[0],Double.parseDouble(lineaSep[1]),Double.parseDouble(lineaSep[2]),Double.parseDouble(lineaSep[3]));
+                    
             }
+            
             lector.close();
         }
         catch (FileNotFoundException ex) {
@@ -40,8 +44,6 @@ public class Taller03ED {
             System.err.println("Archivo no encontrado: "+ex);
         }
     }
-    
-    
     
     
 }
