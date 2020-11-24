@@ -12,12 +12,14 @@ import java.util.PriorityQueue;
  * @author Jorge
  */
 public class Pais {
+    private String nombre;
     private int poblacion;
     private float area;
     private String idioma;
     private PriorityQueue<Ciudad> listaCiudades;
 
-    public Pais(int poblacion, float area, String idioma) {
+    public Pais(String nombre, int poblacion, float area, String idioma) {
+        this.nombre = nombre;
         this.poblacion = poblacion;
         this.area = area;
         this.idioma = idioma;
@@ -26,10 +28,7 @@ public class Pais {
     public PriorityQueue<Ciudad> getListaCiudades() {
         return listaCiudades;
     }
-
-    public void setListaCiudades(PriorityQueue<Ciudad> listaCiudades) {
-        this.listaCiudades = listaCiudades;
-    }
+    
     
     
 }
