@@ -41,10 +41,18 @@ public class Ciudad implements Comparator{
             return 0;
         }
         else{
-            int contador=0;
+            int contador=0, respuesta=0;
+            
             do{
+                if(nombre1.charAt(contador)>nombre2.charAt(contador)){
+                    respuesta = 1;
+                }
+                else{
+                    respuesta = -1;
+                }
                 contador++;
-            }while(contador!=nombre)
+            }while((contador!=nombre1.length() || contador!=nombre2.length()) && respuesta != 0);
+            return respuesta;
         }
     }
     
