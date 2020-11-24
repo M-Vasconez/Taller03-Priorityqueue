@@ -5,6 +5,12 @@
  */
 package taller03.ed;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+
 /**
  *
  * @author Matias Vasconez
@@ -17,5 +23,23 @@ public class Taller03ED {
     public static void main(String[] args) {
         // TODO code application logic here
     }
+    
+    public static void leerArchivos(String archivo) throws IOException{
+        try{
+            BufferedReader lector = new BufferedReader(new FileReader("src/Archivos/"+archivo+".txt"));
+            String linea;
+            while((linea=lector.readLine()) != null){
+               
+                    String[] lineaSep = linea.split(",");
+                
+            }
+            lector.close();
+        }
+        catch (FileNotFoundException ex) {
+            System.err.println("Archivo no encontrado: "+ex);
+        }
+        
+    }
+    
     
 }
