@@ -32,13 +32,37 @@ public class PuntoTuristico implements Comparable<PuntoTuristico> {
     
     @Override
     public int compareTo(PuntoTuristico o) {
-        if(this.puntuacion > o.puntuacion){
+        if(this.puntuacion < o.puntuacion){
             return 1;
         }else if(this.puntuacion == o.puntuacion){
-            return 0;
+            if(this.longitud>o.longitud){ 
+                return 1;
+            }
+            else if (this.longitud == o.longitud){
+                if(this.latitud<o.latitud){
+                    return 1;
+                }
+                else if (this.latitud == o.latitud){
+                    return 0;
+                }
+                else{
+                    return -1;
+                }
+            }
+            else{
+                return -1;
+            }
+            
         }else{
             return -1;
         }
     }    
+
+    @Override
+    public String toString() {
+        return nombre;
+    }
+    
+    
     
 }
