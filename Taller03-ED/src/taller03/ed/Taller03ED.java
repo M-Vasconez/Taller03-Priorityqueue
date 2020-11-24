@@ -21,24 +21,24 @@ public class Taller03ED {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
     }
     
-    public static void leerArchivos(String archivo) throws IOException{
+    public static void leerArchivos(String archivo){
         try{
             BufferedReader lector = new BufferedReader(new FileReader("src/Archivos/"+archivo+".txt"));
             String linea;
             while((linea=lector.readLine()) != null){
-               
                     String[] lineaSep = linea.split(",");
-                
             }
             lector.close();
         }
         catch (FileNotFoundException ex) {
             System.err.println("Archivo no encontrado: "+ex);
         }
-        
+        catch (IOException ex) {
+            System.err.println("Archivo no encontrado: "+ex);
+        }
     }
     
     
