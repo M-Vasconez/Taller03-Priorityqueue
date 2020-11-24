@@ -1,9 +1,8 @@
 
 package taller03.ed;
 
-import java.util.Comparator;
 
-public class PuntoTuristico implements Comparator {
+public class PuntoTuristico implements Comparable<PuntoTuristico> {
     String nombre;
     double latitud, longitud, puntuacion;
 
@@ -31,19 +30,15 @@ public class PuntoTuristico implements Comparator {
     }
     
     
-
     @Override
-    public int compare(Object o1, Object o2) {
-        PuntoTuristico punto1=(PuntoTuristico) o1;
-        PuntoTuristico punto2=(PuntoTuristico) o2;
-        if(punto1.puntuacion > punto2.puntuacion){
+    public int compareTo(PuntoTuristico o) {
+        if(this.puntuacion > o.puntuacion){
             return 1;
-        }else if(punto1.puntuacion == punto2.puntuacion){
+        }else if(this.puntuacion == o.puntuacion){
             return 0;
         }else{
             return -1;
         }
-    }
-       
+    }    
     
 }
