@@ -3,7 +3,7 @@ package taller03.ed;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class Ciudad implements Comparator{
+public class Ciudad implements Comparable<Ciudad>{
 
     private String nombre;
 
@@ -25,25 +25,19 @@ public class Ciudad implements Comparator{
 
     @Override
     public String toString() {
-        return "Ciudad{" + "nombre=" + nombre + '}';
+        return nombre;
     }
-    
-    
 
     @Override
-    public int compare(Object o1, Object o2) {
-        Ciudad ciudad1 = (Ciudad) o1;
-        Ciudad ciudad2 = (Ciudad) o2;
-        
-        String nombre1= ciudad1.nombre.toUpperCase();
-        String nombre2= ciudad2.nombre.toUpperCase();
-        
+    public int compareTo(Ciudad o) {
+        String nombre1= this.nombre.toUpperCase();
+        String nombre2= o.nombre.toUpperCase();
         if(nombre1.equals(nombre2)){
             return 0;
         }
         else{
             int contador=0, respuesta=0;
-            
+            int limite = nombre1.length()>nombre2.length()?nombre2.length():nombre1.length();
             do{
                 if(nombre1.charAt(contador)>nombre2.charAt(contador)){
                     respuesta = 1;
@@ -52,10 +46,14 @@ public class Ciudad implements Comparator{
                     respuesta = -1;
                 }
                 contador++;
-            }while((contador!=nombre1.length() || contador!=nombre2.length()) && respuesta != 0);
+            }while(contador<limite && respuesta == 0);
             return respuesta;
         }
+        
     }
+
+    
+    
     
     
 }

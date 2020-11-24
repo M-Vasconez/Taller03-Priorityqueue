@@ -20,7 +20,7 @@ public class Taller03ED {
         for(String ciu : nombreCiudades){
             pais.getListaCiudades().add(Lectura.leerArchivos(ciu));
         }
-        System.out.println("holamundo");
+        menu(pais);
         
     }
     
@@ -32,6 +32,5 @@ public class Taller03ED {
             contador++;
         }
         System.out.println(contador+") Salir");
-        
     }
 }
