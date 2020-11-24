@@ -21,31 +21,8 @@ public class Taller03ED {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        String nombreCiudades[]= {"Guayaquil","Quito"};
         
     }
-    
-    public static Ciudad leerArchivos(String archivo){
-        Ciudad ciudad = new Ciudad(archivo,1,1);
-        try{
-            BufferedReader lector = new BufferedReader(new FileReader("src/Archivos/"+archivo+".txt"));
-            String linea;
-            while((linea=lector.readLine()) != null){
-                    String[] lineaSep = linea.split(",");
-                    PuntoTuristico pt = new PuntoTuristico(lineaSep[0],Double.parseDouble(lineaSep[1]),Double.parseDouble(lineaSep[2]),Double.parseDouble(lineaSep[3]));
-                    ciudad.getListaPuntos().add(pt);
-            }
-            
-            lector.close();
-        }
-        catch (FileNotFoundException ex) {
-            System.err.println("Archivo no encontrado: "+ex);
-        }
-        catch (IOException ex) {
-            System.err.println("Archivo no encontrado: "+ex);
-        }
-        
-        return ciudad;
-    }
-    
     
 }
