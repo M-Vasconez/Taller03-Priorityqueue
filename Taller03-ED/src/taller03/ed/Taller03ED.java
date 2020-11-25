@@ -48,6 +48,11 @@ public class Taller03ED {
             ciudad=iteradorC.next();
         }
         
+        Iterator<PuntoTuristico> iteradorI = ciudad.getListaPuntos().iterator();
+        do{
+            System.out.println(iteradorI.next());
+        }while(iteradorI.hasNext());
+       
         System.out.print("\nIngrese cantidad de puntos turisticos que desea ver: ");
         int cantidadPuntos=Integer.parseInt(s.nextLine());
         
