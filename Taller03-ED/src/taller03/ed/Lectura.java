@@ -26,7 +26,7 @@ public class Lectura {
                     if(lectura){
                     String[] lineaSep = linea.split(",");
                     PuntoTuristico pt = new PuntoTuristico(lineaSep[0],Double.parseDouble(lineaSep[1]),Double.parseDouble(lineaSep[2]),Double.parseDouble(lineaSep[3]));
-                    ciudad.getListaPuntos().add(pt);
+                    ciudad.getListaPuntos().offer(pt);
                     }
                     lectura=true;
             }

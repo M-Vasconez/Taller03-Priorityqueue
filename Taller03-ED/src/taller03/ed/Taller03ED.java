@@ -6,8 +6,7 @@
 package taller03.ed;
 
 import java.util.Iterator;
-import java.util.ListIterator;
-import java.util.PriorityQueue;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 /**
@@ -43,19 +42,30 @@ public class Taller03ED {
         int ingreso=Integer.parseInt(s.nextLine());
         Ciudad ciudad = null;
         Iterator<Ciudad> iteradorC = pais.getListaCiudades().iterator();
-        
         for(int i=0; i<ingreso;i++){
             ciudad=iteradorC.next();
         }
+        
+        System.out.println(ciudad);
        
         System.out.print("\nIngrese cantidad de puntos turisticos que desea ver: ");
         int cantidadPuntos=Integer.parseInt(s.nextLine());
         
-        Iterator<PuntoTuristico> iteradorP = ciudad.getListaPuntos().iterator();
+        //Iterator<PuntoTuristico> iteradorP = ciudad.getListaPuntos().iterator();
+        //for(int i=0; i<cantidadPuntos;i++){
+            
+        //    System.out.println(iteradorP.next());
+            
+        //}
+        LinkedList<PuntoTuristico> ptemp = new LinkedList<>();
         for(int i=0; i<cantidadPuntos;i++){
+            PuntoTuristico temp = ciudad.getListaPuntos().poll();
+            ptemp.push(temp);
+            System.out.println(temp);
             
-            System.out.println(iteradorP.next());
-            
+        }
+        for(int i=0; i<cantidadPuntos;i++){
+            ciudad.getListaPuntos().offer(ptemp.pop());
         }
         
        

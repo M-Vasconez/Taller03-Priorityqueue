@@ -35,6 +35,7 @@ public class PuntoTuristico implements Comparable<PuntoTuristico> {
         if(this.puntuacion < o.puntuacion){
             return 1;
         }else if(this.puntuacion == o.puntuacion){
+            
             if(this.longitud>o.longitud){ 
                 return 1;
             }
